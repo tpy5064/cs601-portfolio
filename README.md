@@ -7,6 +7,6 @@
  ## Logs
  
  ### November 7, 2022
- ..* Added 4 HTML pages (index, about, contact and skills).
- ..* Inserted semantic HTML tags for content.
- ..* Added class names to all elements for ease of styling in coming weeks.
+..* Added 4 HTML pages (index, about, contact and skills).
+..* Inserted semantic HTML tags for content.
+..* Added class names to all elements for ease of styling in coming weeks.
