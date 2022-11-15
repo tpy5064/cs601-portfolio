@@ -10,3 +10,7 @@
 * Added 4 HTML pages (index, about, contact and skills).
 * Inserted semantic HTML tags for content.
 * Added class names to all elements for ease of styling in coming weeks.
+
+### November 14, 2022
+* Addded CSS File
+* Completed basic styling for 4 all 4 pages
