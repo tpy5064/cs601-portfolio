@@ -3,43 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <title>About Tianqi</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header class="about-header">
-      <h1 class="about-header-title">About Me</h1>
-      <nav class="index-nav">
-        <a href="./index.html" class="home-link">Home</a>
-        <a href="./about.html" class="about-link">About</a>
-        <a href="./skills.html" class="skills-link">Skills</a>
-        <a href="./contact.html" class="contact-link">Contact</a>
-      </nav>
-    </header>
-    <section class="about-page-content">
-      <h2 class="about-page-subtitle">Here's something about me...</h2>
-      <p class="about-page-introduction">
-        Hello! My name is Tianqi Yang. I am an aspiring font-end web developer
-        with a keen sense of style. I wish to create websites and content as
-        visually appealing as possible with all the functionality too. I enjoy
-        working with React and SCSS and they are the tools of my choice! Please
-        feel free to contact me if you wish to chat!
-      </p>
-      <p class="about-page-interests">
-        A little more about myself. I am from China, specifically from the
-        north-eastern region of Inner Mongolia, Hulunbuir. I am also of Manchu
-        descent, a northern ethnic minority in China. This is how you greet each
-        other in Manchu: ᠰᡳ ᠰᠠᡳᠶᡡᠨ ᠨᡳᠣ &#40;Si sain nio?&#41;, pronounced "she
-        say-in knee-o?". The Manchu language is written vertically top to
-        bottom, so it isn't displayed in the correct orientation on the web.
-      </p>
-      <img src="./assets/img/manchu-text.png" alt="Manchu Written Language">
-    </section>
-    <footer class="index-footer">
-        <div class="index-footer-link-container">
-            <a href="./index.html" class="footer-home-link">Home</a>
-            <a href="./about.html" class="footer-about-link">About</a>
-            <a href="./skills.html" class="footer-skills-link">Skills</a>
-            <a href="./contact.html" class="footer-contact-link">Contact</a>
+  <body class="about-body">
+    <nav class="nav-bar">
+      <ul class="nav-btn-container">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c.2 35.5-28.5 64.3-64 64.3H128.1c-35.3 0-64-28.7-64-64V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24zM352 224c0-35.3-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64s64-28.7 64-64zm-96 96c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H256z"
+              />
+            </svg>
+            <span class="link-text">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./about.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 256h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm96-96c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zm128-32H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+              />
+            </svg>
+            <span class="link-text"> About </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./skills.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M176 88v40H336V88c0-4.4-3.6-8-8-8H184c-4.4 0-8 3.6-8 8zm-48 40V88c0-30.9 25.1-56 56-56H328c30.9 0 56 25.1 56 56v40h28.1c12.7 0 24.9 5.1 33.9 14.1l51.9 51.9c9 9 14.1 21.2 14.1 33.9V304H384V288c0-17.7-14.3-32-32-32s-32 14.3-32 32v16H192V288c0-17.7-14.3-32-32-32s-32 14.3-32 32v16H0V227.9c0-12.7 5.1-24.9 14.1-33.9l51.9-51.9c9-9 21.2-14.1 33.9-14.1H128zM0 416V336H128v16c0 17.7 14.3 32 32 32s32-14.3 32-32V336H320v16c0 17.7 14.3 32 32 32s32-14.3 32-32V336H512v80c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64z"
+              />
+            </svg>
+            <span class="link-text">Skills</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./contact.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+              />
+            </svg>
+            <span class="link-text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="about-main">
+      <h1 class="about-main-title">About me</h1>
+      <div class="about-main-content">
+        <div class="about-content-textarea">
+          <p>
+            Hello! My name is Tianqi Yang. I am an aspiring font-end web
+            developer with a keen sense of style. I wish to create websites and
+            content as visually appealing as possible with all the functionality
+            too. I enjoy working with React and SCSS and they are the tools of
+            my choice! Please feel free to contact me if you wish to chat!
+          </p>
+          <p>
+            A little more about myself. I am from China, specifically from the
+            north-eastern region of Inner Mongolia, Hulunbuir. I am also of
+            Manchu descent, a northern Tungusic minority in China. This is how
+            you greet each other in Manchu: ᠰᡳ ᠰᠠᡳᠶᡡᠨ ᠨᡳᠣ &#40;Si sain
+            nio?&#41;. Inner Mongolia is a beautiful place where you get to see
+            the vast grasslands, green pasture and herds of sheep. It is a place
+            where you get to be close to nature and experience the hospitality
+            of the locals.
+          </p>
+          <p>
+            Sadly, Manchu is a critically endangered language and fewer and fewer 
+            people are able to speak it. I am doing my part to preserve the language.
+            I would like to teach you, the viewer some phrases if you are interested.
+          </p>
         </div>
-    </footer>
+        <div class="about-content-visuals">
+          <h2 class="manchu-text">ᠶᠠᠩ ᡨᡳᠠᠨᠨᠴᡳ <br> ᠮᠠᡤᡳᠶᠠ ᡥᠠᠯᠠ</h2>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
